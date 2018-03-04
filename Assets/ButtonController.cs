@@ -21,7 +21,7 @@ public class ButtonController : MonoBehaviour
     public bool BotFactoryT1 = false;
     public bool TankFactoryT1 = false;
 
-    public GameObject Factory;
+    public List<GameObject> Factory = new List<GameObject>();
 
     // Use this for initialization
     void Update()
@@ -45,14 +45,24 @@ public class ButtonController : MonoBehaviour
         }
     }
 
+    public void addFactory(GameObject factory)
+    {
+        Factory.Add(factory);
+    }
+
     public void Unit1()
     {
         if (BotFactoryT1 == true)
         {
-            Factory.GetComponent<UnitSpawner>().unit = Bot1;
-            Factory.GetComponent<UnitSpawner>().prodTime = 5.0f;
-            //Factory.GetComponent<UnitSpawner>().unitRequestAmount = 1;
-            Factory.GetComponent<UnitSpawner>().UnitRequest(1);
+
+            foreach (GameObject go in Factory)
+            {
+                UnitSpawner us = go.GetComponent<UnitSpawner>();
+                us.unit = Bot1;
+                us.prodTime = 5.0f;
+                //Factory.GetComponent<UnitSpawner>().unitRequestAmount = 1;
+                us.UnitRequest(1);
+            }
         }
         if (TankFactoryT1 == true)
         {

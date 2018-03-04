@@ -16,8 +16,11 @@ public class UIManager : MonoBehaviour {
 	public void ShowUI (string factoryID, GameObject factory) {
 		if (factoryID == "Bot1") 
 		{
-			Bot1UI.SetActive (true);
-			Bot1UI.GetComponent<ButtonController>().Factory = factory;
+            List<GameObject> ls = new List<GameObject>();
+            ls = Bot1UI.GetComponent<ButtonController>().Factory;
+            Bot1UI.SetActive (true);
+            if (!Bot1UI.GetComponent<ButtonController>().Factory.Contains(factory))
+                Bot1UI.GetComponent<ButtonController>().addFactory(factory);
 		}
 	}
 
@@ -25,8 +28,9 @@ public class UIManager : MonoBehaviour {
 	{
 		if (factoryID == "Bot1") 
 		{
-			Bot1UI.GetComponent<ButtonController>().Factory = null;
-			Bot1UI.SetActive (false);
+			Bot1UI.GetComponent<ButtonController>().Factory.Clear();
+            Bot1UI.SetActive (false);
+
 		}
 	}
 }
