@@ -31,8 +31,8 @@ public class PlayerSelection : MonoBehaviour {
 		}
 		if (TankFactoryT1 == true) 
 		{
-			
-		}
+            UM.ShowUI("Tank1", gameObject);
+        }
     }
     
     // OnDeselect is called by the RTS Selection System
@@ -47,7 +47,7 @@ public class PlayerSelection : MonoBehaviour {
 		}
 		if (TankFactoryT1 == true) 
 		{
-
-		}
+            UM.HideUI("Tank1");
+        }
     }
 }
