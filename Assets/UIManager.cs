@@ -22,6 +22,14 @@ public class UIManager : MonoBehaviour {
             if (!Bot1UI.GetComponent<ButtonController>().Factory.Contains(factory))
                 Bot1UI.GetComponent<ButtonController>().addFactory(factory);
 		}
+		if (factoryID == "Tank1") 
+		{
+			List<GameObject> ls = new List<GameObject>();
+			ls = Bot1UI.GetComponent<ButtonController>().Factory;
+			Tank1UI.SetActive (true);
+			if (!Tank1UI.GetComponent<ButtonController>().Factory.Contains(factory))
+				Tank1UI.GetComponent<ButtonController>().addFactory(factory);
+		}
 	}
 
 	public void HideUI(string factoryID)
@@ -30,6 +38,12 @@ public class UIManager : MonoBehaviour {
 		{
 			Bot1UI.GetComponent<ButtonController>().Factory.Clear();
             Bot1UI.SetActive (false);
+
+		}
+		if (factoryID == "Tank1") 
+		{
+			Tank1UI.GetComponent<ButtonController>().Factory.Clear();
+			Tank1UI.SetActive (false);
 
 		}
 	}
