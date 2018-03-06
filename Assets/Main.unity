@@ -1351,7 +1351,7 @@ GameObject:
   - component: {fileID: 14851495}
   - component: {fileID: 14851494}
   m_Layer: 5
-  m_Name: Bot3
+  m_Name: Tank3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5678,7 +5678,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4072140772131998, guid: ee1ff424fcf1b4eb1aa29841c8a91d8f, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114384657562077434, guid: ee1ff424fcf1b4eb1aa29841c8a91d8f,
         type: 2}
@@ -14104,7 +14104,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bot3
+  m_Text: Tank3
 --- !u!222 &210933473
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14384,7 +14384,7 @@ Prefab:
     - target: {fileID: 224253209198207272, guid: 1165eebf8473c420eb879b066a175fec,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224253209198207272, guid: 1165eebf8473c420eb879b066a175fec,
         type: 2}
@@ -14469,7 +14469,7 @@ Prefab:
     - target: {fileID: 224678516726501564, guid: 1165eebf8473c420eb879b066a175fec,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1749392707555996, guid: 1165eebf8473c420eb879b066a175fec, type: 2}
       propertyPath: m_Name
@@ -14500,7 +14500,7 @@ Prefab:
     - target: {fileID: 224191555880777368, guid: 1165eebf8473c420eb879b066a175fec,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224883268030096526, guid: 1165eebf8473c420eb879b066a175fec,
         type: 2}
@@ -15756,7 +15756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &234306977
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15829,7 +15829,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77690731f05e4cd4a4627c87c1a1a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  units: []
+  units:
+  - {fileID: 1616814639062036, guid: e98b4a1bfb5b66f45a6460ac62cfd8ae, type: 2}
+  - {fileID: 0}
   BotFactoryT1: 1
   TankFactoryT1: 0
   Factory: []
@@ -17732,7 +17734,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bot6
+  m_Text: Tank6
 --- !u!222 &275421761
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18207,7 +18209,7 @@ GameObject:
   - component: {fileID: 286244739}
   - component: {fileID: 286244738}
   m_Layer: 5
-  m_Name: Bot4
+  m_Name: Tank4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21047,7 +21049,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bot7
+  m_Text: Tank7
 --- !u!222 &320870564
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24269,7 +24271,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bot9
+  m_Text: Tank9
 --- !u!222 &385529671
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37362,7 +37364,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bot10
+  m_Text: Tank10
 --- !u!222 &638059606
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -39268,7 +39270,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bot4
+  m_Text: Tank4
 --- !u!222 &674482902
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -48447,7 +48449,7 @@ GameObject:
   - component: {fileID: 856529919}
   - component: {fileID: 856529918}
   m_Layer: 5
-  m_Name: Bot9
+  m_Name: Tank9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51497,7 +51499,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bot2
+  m_Text: Tank2
 --- !u!222 &917617212
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -61876,7 +61878,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bot1
+  m_Text: Tank1
 --- !u!222 &1108519232
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -71248,7 +71250,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4248487578647532, guid: c9a7a8998a12d7b46bece762361d0d82, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9a7a8998a12d7b46bece762361d0d82, type: 2}
@@ -72089,6 +72091,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1274832502}
   m_Mesh: {fileID: 4300020, guid: 09814cc38c3d3be4ea8182801d521300, type: 3}
+--- !u!1001 &1274968188
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4652412992183186, guid: e6b78e18431544f6581db04222588b12, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 28.142159
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652412992183186, guid: e6b78e18431544f6581db04222588b12, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.9912417
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652412992183186, guid: e6b78e18431544f6581db04222588b12, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 30.63781
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652412992183186, guid: e6b78e18431544f6581db04222588b12, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652412992183186, guid: e6b78e18431544f6581db04222588b12, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652412992183186, guid: e6b78e18431544f6581db04222588b12, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652412992183186, guid: e6b78e18431544f6581db04222588b12, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652412992183186, guid: e6b78e18431544f6581db04222588b12, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e6b78e18431544f6581db04222588b12, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1276596987
 GameObject:
   m_ObjectHideFlags: 0
@@ -72254,7 +72298,7 @@ GameObject:
   - component: {fileID: 1278063429}
   - component: {fileID: 1278063428}
   m_Layer: 5
-  m_Name: Bot7
+  m_Name: Tank7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74391,7 +74435,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bot5
+  m_Text: Tank5
 --- !u!222 &1306139463
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -77390,7 +77434,7 @@ GameObject:
   - component: {fileID: 1344521593}
   - component: {fileID: 1344521592}
   m_Layer: 5
-  m_Name: Bot8
+  m_Name: Tank8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80300,7 +80344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bot1UI: {fileID: 234306976}
-  Tank1UI: {fileID: 0}
+  Tank1UI: {fileID: 1842486268}
 --- !u!1 &1396034735
 GameObject:
   m_ObjectHideFlags: 0
@@ -82272,7 +82316,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bot8
+  m_Text: Tank8
 --- !u!222 &1430338389
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -83002,7 +83046,7 @@ Transform:
   m_LocalScale: {x: 1.4125937, y: 1.4125941, z: 1.4125944}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1439470791
 GameObject:
@@ -83852,7 +83896,7 @@ GameObject:
   - component: {fileID: 1451819881}
   - component: {fileID: 1451819880}
   m_Layer: 5
-  m_Name: Bot1
+  m_Name: Tank1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88076,7 +88120,7 @@ GameObject:
   - component: {fileID: 1521410259}
   - component: {fileID: 1521410258}
   m_Layer: 5
-  m_Name: Bot2
+  m_Name: Tank2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92732,7 +92776,7 @@ GameObject:
   - component: {fileID: 1580000563}
   - component: {fileID: 1580000562}
   m_Layer: 5
-  m_Name: Bot6
+  m_Name: Tank6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92867,7 +92911,7 @@ GameObject:
   - component: {fileID: 1580956562}
   - component: {fileID: 1580956561}
   m_Layer: 5
-  m_Name: Bot10
+  m_Name: Tank10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100888,7 +100932,7 @@ Transform:
   - {fileID: 1900725867}
   - {fileID: 404777635}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1702763391
 GameObject:
@@ -109618,7 +109662,7 @@ GameObject:
   - component: {fileID: 1825310241}
   - component: {fileID: 1825310240}
   m_Layer: 5
-  m_Name: Bot5
+  m_Name: Tank5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110821,7 +110865,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1842486269
 RectTransform:
   m_ObjectHideFlags: 0
@@ -110861,9 +110905,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77690731f05e4cd4a4627c87c1a1a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  units: []
-  BotFactoryT1: 1
-  TankFactoryT1: 0
+  units:
+  - {fileID: 1509782299607638, guid: e6b78e18431544f6581db04222588b12, type: 2}
+  - {fileID: 0}
+  BotFactoryT1: 0
+  TankFactoryT1: 1
   Factory: []
 --- !u!114 &1842486271
 MonoBehaviour:

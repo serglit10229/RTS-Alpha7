@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.AI;
 
 public class MoveByPlayer : MonoBehaviour {
@@ -7,11 +8,26 @@ public class MoveByPlayer : MonoBehaviour {
     public GameObject circle;
     public NavMeshAgent agent;
 
-    public Vector3 dest;
+    public bool shift = false;
+
+    //public Vector3 dest;
+
+    public List<Vector3> dest = new List<Vector3>();
 
     
     // Update is called once per frame
     void Update () {
+
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && shift == false)
+        {
+            shift = true;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift) && shift == true)
+        {
+            shift = false;
+        }
+
         // Rightclicked while selected?
         if (Input.GetMouseButtonDown(1) && circle.activeSelf) {
             // Find out where the user clicked in the 3D world
@@ -19,22 +35,36 @@ public class MoveByPlayer : MonoBehaviour {
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
-                //GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
-                GetComponent<UnityEngine.AI.NavMeshAgent>().destination = hit.point;
-                dest = hit.point;
-                Debug.Log("Move");
-                Debug.Log(dest);
+                if (!dest.Contains(hit.point))
+                {
+                    if (shift != true)
+                    {
+                        dest.Clear();
+                    }
+                    dest.Add(hit.point);
 
+
+                }
             }
         }
-        /*
-        float dist = agent.remainingDistance;
 
-        if (dist != Mathf.Infinity && agent.pathStatus == NavMeshPathStatus.PathComplete && agent.remainingDistance == 0)
+        if(dest.Count != 0)
         {
-            Debug.Log("stop");
-            GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
+            GetComponent<UnityEngine.AI.NavMeshAgent>().destination = dest[0];
         }
-        */
+
+        if (transform.position.x == dest[0].x && transform.position.z == dest[0].z)
+        {
+            Debug.Log("Arrived");
+            Debug.Log(dest.Count);
+            if (dest.Count > 1)
+            {
+                GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
+                GetComponent<UnityEngine.AI.NavMeshAgent>().destination = dest[1];
+            }
+            dest.RemoveAt(0);
+            //GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
+            GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
+        }
     }
 }

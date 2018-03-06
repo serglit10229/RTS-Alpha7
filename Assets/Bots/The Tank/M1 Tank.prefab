@@ -419,7 +419,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1509782299607638}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 102.8, y: 3.2098, z: 48.88}
+  m_LocalPosition: {x: 28.142159, y: 1.9912417, z: 30.63781}
   m_LocalScale: {x: 1.412593, y: 1.412594, z: 1.412594}
   m_Children:
   - {fileID: 4590165638541116}
@@ -1068,7 +1068,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 1859958201055968}
   agent: {fileID: 0}
-  dest: {x: 0, y: 0, z: 0}
+  shift: 0
+  dest: []
 --- !u!114 &114316774957723946
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1081,7 +1082,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circle: {fileID: 1859958201055968}
-  tc: {fileID: 0}
+  UM: {fileID: 0}
+  BotFactoryT1: 0
+  TankFactoryT1: 0
+  BotT1UI: {fileID: 0}
+  TankT1UI: {fileID: 0}
 --- !u!114 &114369906688641444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1117,14 +1122,14 @@ NavMeshAgent:
   m_GameObject: {fileID: 1509782299607638}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 3.37
+  m_Radius: 1
   m_Speed: 4
   m_Acceleration: 2
   avoidancePriority: 50
   m_AngularSpeed: 100
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 0
+  m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2.1
   m_BaseOffset: 0
