@@ -8,6 +8,8 @@ public class PlayerSelection : MonoBehaviour {
 
 	public UIManager UM;
 
+	public UnitManager unitManager;
+
 	public bool BotFactoryT1 = false;
 	public bool TankFactoryT1 = false;
 
@@ -17,6 +19,7 @@ public class PlayerSelection : MonoBehaviour {
 	void Update()
 	{
 		UM = GameObject.Find("UIManager").GetComponent<UIManager>();
+		unitManager = GameObject.Find("UnitManager").GetComponent<UnitManager>();
 	}
 
     // OnSelect is called by the RTS Selection System
@@ -33,6 +36,13 @@ public class PlayerSelection : MonoBehaviour {
 		{
             UM.ShowUI("Tank1", gameObject);
         }
+		if (TankFactoryT1 == false && BotFactoryT1 == false) 
+		{
+			if (!unitManager.units.Contains (gameObject)) 
+			{
+				unitManager.units.Add(gameObject);
+			}
+		}
     }
     
     // OnDeselect is called by the RTS Selection System
@@ -49,5 +59,12 @@ public class PlayerSelection : MonoBehaviour {
 		{
             UM.HideUI("Tank1");
         }
+		if (TankFactoryT1 == false && BotFactoryT1 == false) 
+		{
+			if (unitManager.units.Contains (gameObject)) 
+			{
+				unitManager.units.Remove(gameObject);
+			}
+		}
     }
 }

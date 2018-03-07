@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 65960310889605254}
   - component: {fileID: 54372430768646300}
   - component: {fileID: 114285562304755192}
+  - component: {fileID: 114720368754178088}
   m_Layer: 0
   m_Name: Laser_Bot(Reduced)
   m_TagString: Untagged
@@ -1141,7 +1142,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 1125951142783896}
   agent: {fileID: 195647951160862986}
-  dest: {x: 0, y: 0, z: 0}
+  shift: 0
+  dest:
+  - {x: 1.737341e-39, y: 3.4797e-41, z: 0.87293005}
+  - {x: 1e-45, y: 8.340836, z: 1e-45}
+  - {x: 4.6e-44, y: 1e-45, z: 1.737341e-39}
+--- !u!114 &114720368754178088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1616814639062036}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f1deb6021f30ca468117b0a2bf5d9e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitNum: 0
+  r: 0
+  mult: 2
+  dist: 0
 --- !u!114 &114754300123503790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1155,6 +1175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 1125951142783896}
   UM: {fileID: 0}
+  unitManager: {fileID: 0}
   BotFactoryT1: 0
   TankFactoryT1: 0
   BotT1UI: {fileID: 0}

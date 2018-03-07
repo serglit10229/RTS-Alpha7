@@ -5,8 +5,13 @@ using UnityEngine.AI;
 
 public class Stop : MonoBehaviour {
 
+	public int unitNum = 0;
+	public int r = 0;
+	public int mult = 2;
+	public float dist;
 
-    bool off = false;
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -14,18 +19,16 @@ public class Stop : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey(KeyCode.F))
-        {
-            GetComponent<NavMeshAgent>().isStopped = true;
-            GetComponent<NavMeshAgent>().destination = transform.position;
-            GetComponent<NavMeshAgent>().isStopped = false;
-        }
-        /*
-        if (Input.GetKeyDown(KeyCode.F) && off == true)
-        {
-            GetComponent<NavMeshAgent>().isStopped = false;
-            off = false;
-        }
-        */
+		dist = GetComponent<UnityEngine.AI.NavMeshAgent> ().remainingDistance;
+		unitNum = GameObject.Find("UnitManager").GetComponent<UnitManager>().unitNum;
+
+		r = unitNum * mult;
+		if(dist <= r)
+		{
+			GetComponent<UnityEngine.AI.NavMeshAgent> ().isStopped = true;
+			GetComponent<UnityEngine.AI.NavMeshAgent> ().destination = transform.position;
+			GetComponent<UnityEngine.AI.NavMeshAgent> ().isStopped = false;
+		}
+
     }
 }

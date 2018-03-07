@@ -34710,6 +34710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 282239561}
   UM: {fileID: 0}
+  unitManager: {fileID: 0}
   BotFactoryT1: 0
   TankFactoryT1: 0
   BotT1UI: {fileID: 0}
@@ -37751,6 +37752,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 641307306}
   m_Mesh: {fileID: 4300012, guid: 09814cc38c3d3be4ea8182801d521300, type: 3}
+--- !u!1 &641898042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 641898044}
+  - component: {fileID: 641898043}
+  m_Layer: 0
+  m_Name: UnitManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!114 &641898043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 641898042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a88a8a9b8358463eb45c7269d6ef6fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  units: []
+  unitNum: 0
+--- !u!4 &641898044
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 641898042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -130.54883, y: 158.64542, z: 227.38991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &644131866
 GameObject:
   m_ObjectHideFlags: 0
@@ -64257,6 +64300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 1246677317}
   UM: {fileID: 0}
+  unitManager: {fileID: 0}
   BotFactoryT1: 0
   TankFactoryT1: 0
   BotT1UI: {fileID: 0}
@@ -71032,6 +71076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 169938905}
   UM: {fileID: 0}
+  unitManager: {fileID: 0}
   BotFactoryT1: 0
   TankFactoryT1: 0
   BotT1UI: {fileID: 0}
@@ -81536,6 +81581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 1811341040}
   UM: {fileID: 0}
+  unitManager: {fileID: 0}
   BotFactoryT1: 0
   TankFactoryT1: 0
   BotT1UI: {fileID: 0}
@@ -87698,6 +87744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 1637217844}
   UM: {fileID: 0}
+  unitManager: {fileID: 0}
   BotFactoryT1: 0
   TankFactoryT1: 0
   BotT1UI: {fileID: 0}
@@ -90986,6 +91033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 1783564005}
   UM: {fileID: 0}
+  unitManager: {fileID: 0}
   BotFactoryT1: 0
   TankFactoryT1: 0
   BotT1UI: {fileID: 0}
@@ -105594,6 +105642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 1985364678}
   UM: {fileID: 0}
+  unitManager: {fileID: 0}
   BotFactoryT1: 0
   TankFactoryT1: 0
   BotT1UI: {fileID: 0}
@@ -116615,6 +116664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 1647200374}
   UM: {fileID: 0}
+  unitManager: {fileID: 0}
   BotFactoryT1: 0
   TankFactoryT1: 0
   BotT1UI: {fileID: 0}

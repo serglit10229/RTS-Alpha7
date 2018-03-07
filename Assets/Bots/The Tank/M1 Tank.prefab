@@ -1083,6 +1083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circle: {fileID: 1859958201055968}
   UM: {fileID: 0}
+  unitManager: {fileID: 0}
   BotFactoryT1: 0
   TankFactoryT1: 0
   BotT1UI: {fileID: 0}
@@ -1114,6 +1115,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f1deb6021f30ca468117b0a2bf5d9e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitNum: 0
+  r: 0
+  mult: 2
+  dist: 0
 --- !u!195 &195299904971983694
 NavMeshAgent:
   m_ObjectHideFlags: 1
