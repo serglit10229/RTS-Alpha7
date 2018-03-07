@@ -25,9 +25,9 @@ public class Stop : MonoBehaviour {
 		r = unitNum * mult;
 		if(dist <= r)
 		{
+            Debug.Log("Stop");
 			GetComponent<UnityEngine.AI.NavMeshAgent> ().isStopped = true;
-			GetComponent<UnityEngine.AI.NavMeshAgent> ().destination = transform.position;
-			GetComponent<UnityEngine.AI.NavMeshAgent> ().isStopped = false;
+
 		}
 
     }

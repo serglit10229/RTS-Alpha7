@@ -50,6 +50,7 @@ public class MoveByPlayer : MonoBehaviour {
 
         if(dest.Count != 0)
         {
+            GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
             GetComponent<UnityEngine.AI.NavMeshAgent>().destination = dest[0];
         }
 
