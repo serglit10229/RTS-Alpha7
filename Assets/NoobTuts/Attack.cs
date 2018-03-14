@@ -23,16 +23,12 @@ public class Attack : MonoBehaviour {
     }
     
     void Fire() {
-        Debug.Log("Fire");
         foreach (GameObject g in GameObject.FindGameObjectsWithTag(enemyTag)) {
             // still alive?
-            Debug.Log("Fire2");
             if (g != null) {
                 // in attack range?		
-                Debug.Log("Fire3");
                 if (Vector3.Distance(g.transform.position, transform.position) <= range) {
-                    // shoot arrow at it
-                    Debug.Log("Fire4");
+                    transform.LookAt(g.transform);
                     GameObject a = (GameObject)Instantiate(arrow, 
                                                            transform.position, // default position
                                                            Quaternion.identity); // default rotation
@@ -49,11 +45,6 @@ public class Attack : MonoBehaviour {
                     {
                         a.GetComponent<Destroy>().enemyTag = "Player";
                     }
-
-                    // animation
-                    GetComponent<PlayCurve>().Toggle();
-                    
-                    // done for now
                     break;
                 }
             }

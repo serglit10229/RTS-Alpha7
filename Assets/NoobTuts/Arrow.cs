@@ -17,7 +17,7 @@ public class Arrow : MonoBehaviour {
             GetComponent<Rigidbody>().velocity = dir.normalized * speed;
             //Debug.Log("FIREE");
             // Look at it
-            transform.LookAt(target.position);
+            //transform.LookAt(target.position);
         } else {
             // Otherwise destroy self
             //Debug.Log("Destroy");

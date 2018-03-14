@@ -23,25 +23,8 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
         if (selected == true)
         {
-            Debug.Log("selected");
+
             if (Input.GetMouseButtonDown(1))
-            {
-                Debug.Log("moving");
-                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
-
-                if (Physics.Raycast(ray, out hit, 20000, movementMask))
-                {
-                    motor.MoveToPoint(hit.point);
-                    //Move to
-
-                    RemoveFocus();
-                }
-
-
-            }
-
-            if (Input.GetMouseButtonDown(0))
             {
                 Ray ray = cam.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
